@@ -1,4 +1,4 @@
-const rsms = require("../../../server/rsms");
+const rsms = require("server/rsms");
 const mocha = require("mocha");
 const request = require("supertest");
 

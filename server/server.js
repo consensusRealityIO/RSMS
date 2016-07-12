@@ -1,3 +1,3 @@
-const rsms = require("./rsms");
+const rsms = require("server/rsms");
 
-rsms.listen(8080);
+rsms.listen(process.env.HTTP_PORT);
