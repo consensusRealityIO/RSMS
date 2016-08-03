@@ -1,0 +1,22 @@
+{
+  "name": "RSMS",
+  "version": "0.1.0",
+  "description": "A POS system that uses Bitcoin",
+  "devDependencies": {
+    "mocha": "^2.x",
+    "eslint": "^3.x",
+    "supertest": "^1.x"
+  },
+  "dependencies": {
+    "bunyan": "^1.x",
+    "foreman": "^1.x"
+  },
+  "engines": {
+    "node": "^4.x"
+  },
+  "scripts": {
+    "pretest": "./node_modules/.bin/eslint .",
+    "test": "NODE_PATH=./ ./node_modules/.bin/mocha --recursive spec",
+    "start": "NODE_PATH=./ ./node_modules/.bin/nf start"
+  }
+}
