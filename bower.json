@@ -1,0 +1,9 @@
+{
+  "name": "rsms-ui",
+  "version": "0.1.0",
+  "description": "The web UI of RSMS",
+  "dependencies": {
+    "bootstrap": "^3.x",
+    "jquery": "^2.x"
+  }
+}
