@@ -1,0 +1,23 @@
+.height-full {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.align-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.margin-bottom {
+  margin-bottom: 40px;
+}
+
+.logo {
+  max-width: 250px;
+  max-height: 250px;
+}
