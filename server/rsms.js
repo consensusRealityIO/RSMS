@@ -11,14 +11,16 @@ const server = http.createServer(function(request, response) {
   }
   fs.exists(filePath, function(exists) {
     if (exists) {
+      LOGGER.info("Processing request: " + request.url);
       response.writeHead(200);
       var readStream = fs.createReadStream(filePath);
       readStream.pipe(response, {autoClose: true});
     } else {
-      LOGGER.warn("Unmapped request URL: " + request.url);
-      response.writeHead(404);
+      LOGGER.warn("Resource not found: " + request.url);
+      response.writeHead(404, {"Content-Type": "text/plain"});
+      response.write("404: Not found");
+      response.end();
     }
-    response.end();
   });
 });
 
