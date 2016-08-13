@@ -1,27 +1,11 @@
 const bunyan = require("bunyan");
-const http = require("http");
-const fs = require("fs");
+const express = require("express");
 
 const LOGGER = bunyan.createLogger({name: "rsms"});
+const APP_DIR = __dirname.substr(0, __dirname.lastIndexOf("/")) + "/app";
+LOGGER.info("Static files directory: " + APP_DIR);
 
-const server = http.createServer(function(request, response) {
-  var filePath = "app" + request.url;
-  if (request.url == "/") {
-    filePath += "index.html";
-  }
-  fs.exists(filePath, function(exists) {
-    if (exists) {
-      LOGGER.info("Processing request: " + request.url);
-      response.writeHead(200);
-      var readStream = fs.createReadStream(filePath);
-      readStream.pipe(response, {autoClose: true});
-    } else {
-      LOGGER.warn("Resource not found: " + request.url);
-      response.writeHead(404, {"Content-Type": "text/plain"});
-      response.write("404: Not found");
-      response.end();
-    }
-  });
-});
+const server = express();
+server.use(express.static(APP_DIR));
 
-module.exports = server;
+module.exports.server = server;
