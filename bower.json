@@ -4,6 +4,7 @@
   "description": "The web UI of RSMS",
   "dependencies": {
     "bootstrap": "^3.x",
-    "jquery": "^2.x"
+    "jquery": "^2.x",
+    "socket.io-client": "^1.x"
   }
 }

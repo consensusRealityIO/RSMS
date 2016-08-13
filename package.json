@@ -10,7 +10,8 @@
   "dependencies": {
     "bunyan": "^1.x",
     "express": "^4.x",
-    "foreman": "^1.x"
+    "foreman": "^1.x",
+    "socket.io": "^1.x"
   },
   "engines": {
     "node": "^4.x"
