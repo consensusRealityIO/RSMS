@@ -5,7 +5,7 @@ const request = require("supertest");
 mocha.describe("unit spec of rsms", function() {
   mocha.describe("rsms", function() {
     mocha.it("should return a status code 200 upon request of \"/\"", function() {
-      request(rsms)
+      request(rsms.server)
         .get("/")
         .expect(200);
     });
