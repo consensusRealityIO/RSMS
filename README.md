@@ -1,14 +1,14 @@
 # Real Simple Merchant System (RSMS)
 
-Premis: Merchants should be able to accept payment for their product or service from anyone at nearly zero cost using open source software and cryptocurrency. 
+##Premis: Merchants should be able to accept payment for their product or service from anyone at nearly zero cost using open source software and cryptocurrency. 
 
-The Real Simple Merchant System (RSMS) is a simple web based mechanism to help merchants easily accept cryptocurrency payments and review their transactions. 
+* The Real Simple Merchant System (RSMS) is a simple web based mechanism to help merchants easily accept cryptocurrency payments and review their transactions. 
 
-The system is designed with no reliance on proprietary centralized software services. 
+* The system is designed with no reliance on proprietary centralized software services. 
 
-All code is free and open source and all runtime dependencies will have multiple implementations and redundant delivery options so that there is no single source of failure.
+* All code is free and open source and all runtime dependencies will have multiple implementations and redundant delivery options so that there is no single source of failure.
 
-User Facing Components
+##User Facing Components
 
 1. Data Entry Screen - This screen is the first to be seen and displays the Merchant name, currency choice (USD, IDR, EUR etc.), displays price data entry box, displays PAY button, and displays Transaction History Link. 
 
